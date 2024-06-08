@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f7f1e3;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    border: 1px solid black;
+    font-weight: bold;
+    max-width: 100%;
+    width: 30vw;
+    background-color: #34ace0;
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+    
+.formInputs {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 8px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 15px;
+    border: none;
+}
+
+.btn {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 49%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.tabela {
+    background-color: #34ace0;
+    margin: 20px auto;
+    padding: 20px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.tabela, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 15px;
+}
+
+@media (max-width:1024px) {
+    button {
+        width: 47%;
+        margin: 5px 0;
+        padding: 3px;
+        font-size: 8px;
+    }
+    .form{
+        width: 30vw;
+    }
+    th, td {
+        padding: 5px 15px;
+        font-size: 8.8px;
+    }
+    
+}
+@media (max-width: 760px) {
+    .form {
+        width: 30vw;
+        height: 33vh;
+    }
+    
+    button {
+        width: 47%;
+        margin: 5px 0;
+        padding: 2.7px;
+        font-size: 5px;
+    }
+    input{
+        padding: 5px;
+        font-size: 8px;
+        margin: 5px 0;
+    }
+    th, td {
+        padding: 3px 7px;
+        max-width: 30%;
+        font-size: 8px;
+    }
+}
